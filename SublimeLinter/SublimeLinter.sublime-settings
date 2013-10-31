@@ -48,7 +48,7 @@
       "indent": 4,
 
       // Prohibit use of a variable before it is defined.
-      "latedef": false,
+      "latedef": true,
 
       // Require capitalized names for constructor functions.
       "newcap": true,
@@ -63,6 +63,27 @@
       "undef": true,
 
       // Warn when variables are defined but never used.
-      "unused": true
+      "unused": true,
+
+      // Require {} for every new block or scope
+      "curly": true,
+
+      // for..in loops must use hasOwnProperty
+      "forin": true,
+
+      // Prohibts overwriting of native methods via Object.prototype.x
+      "freeze": true,
+
+      // Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
+      "immed": true,
+
+      // Prohibit use of `arguments.caller` and `arguments.callee`
+      "noarg": true,          
+      
+      // when creating an object with new, the value must be assigned to a variable
+      "nonew": true,
+
+      // Tolerate using `[]` notation when it can still be expressed in dot notation
+      "sub": true
     }
 }
